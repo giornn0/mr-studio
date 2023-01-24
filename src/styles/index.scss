@@ -1,0 +1,43 @@
+@import "variables.scss";
+@import "animations.scss";
+
+:root {
+  --bg-color: $bg-color;
+  --header-bg: $header-bg;
+  --color: $color;
+  --red: $red;
+  --blue: $blue;
+  --violet: $violet;
+  --pink: $pink;
+  --gray: $gray;
+
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: var(--color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  background-color: var(--bg-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  scroll-snap-align: center;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.home-background {
+  background-image: url("../assets/logo-green.jpeg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}
+.home-black {
+  background-color: rgba(#010101, 0.5);
+}
